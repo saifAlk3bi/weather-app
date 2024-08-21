@@ -18,7 +18,6 @@ async function getWeatherData(location) {
   }
 }
 
-// Extract relevant weather data
 function processWeatherData(data) {
   return {
     location: data.resolvedAddress,
@@ -30,7 +29,6 @@ function processWeatherData(data) {
   };
 }
 
-// Render weather data on the page
 function renderData(processedData) {
   document.getElementById('temp').innerHTML = processedData.temperature + "°C";
   document.getElementById('how-feels').innerHTML = "Feels like " + processedData.feelsLike + "°C";
@@ -39,7 +37,6 @@ function renderData(processedData) {
   document.getElementById('date').innerHTML = processedData.date;
 }
 
-// Handle search button click event
 document.querySelector('.search-btn').addEventListener("click", () => {
   const cityName = document.getElementById("search").value;
   console.log("The city name is:", cityName);
