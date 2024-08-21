@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 10%;
+    background-color: #f0f4f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .searchDiv form {
+    display: flex;
+    gap: .5rem;
+}
+
+header .searchDiv button {
+    padding: .6rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4a90e2;
+    transition: background-color 0.3s ease;
+}
+
+header .searchDiv button:hover {
+    background-color: #f0f4f8;
+}
+
+header #search {
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    padding: 12px 20px 12px 40px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../src/assets/icons8-search-50.png');
+    background-size: 20px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.main {
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main .weather-info h1 {
+    font-size: 4rem;
+    color: #ff4500;
+}
+
+.main .weather-info p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.main .additional-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
