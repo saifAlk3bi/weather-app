@@ -12,7 +12,6 @@ async function getWeatherData(location) {
     const data = await response.json();
     console.log('Raw data:', data);
     const processedData = processWeatherData(data);
-    console.log('Processed weather data:', processedData);
     renderData(processedData);
   } catch (error) {
     console.error('Error fetching weather data:', error);
